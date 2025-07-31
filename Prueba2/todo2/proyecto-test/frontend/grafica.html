@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica de Reseñas de Artículos</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="grafica.css">
+    <!-- Google Fonts para un estilo más agradable (Opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Incluir la biblioteca Chart.js desde una CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* Estilos para el botón de regresar */
+        .btn-regresar {
+            display: inline-block;
+            margin-top: 15px; /* Espacio superior */
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #2563eb; /* Azul similar al del título */
+            border: none;
+            border-radius: 8px;
+            text-decoration: none; /* Quitar subrayado del enlace */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-regresar:hover {
+            background-color: #1d4ed8; /* Un azul un poco más oscuro al pasar el ratón */
+        }
+
+        /* Asegurarse de que el contenido del header esté centrado */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📊 Gráfica de Reseñas</h1>
+        <p>Grafica dedicada a mostrar los equipos medicos con mejor puntuación.</p>
+        <!-- Botón para regresar al inicio -->
+        <a href="index.html" class="btn-regresar">Regresar al Inicio</a>
+    </header>
+
+    <main>
+        <!-- Contenedor para la gráfica para controlar su tamaño y centrado -->
+        <div class="chart-container">
+            <!-- El elemento canvas donde se dibujará la gráfica -->
+            <canvas id="graficaResenas"></canvas>
+        </div>
+    </main>
+    
+    <!-- Enlace al script de JavaScript (al final del body) -->
+    <script src="grafica.js"></script>
+</body>
+</html>

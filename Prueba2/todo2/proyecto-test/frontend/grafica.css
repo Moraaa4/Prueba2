@@ -1,0 +1,46 @@
+/* --- Estilos Generales --- */
+:root {
+    --primary-color: #007bff;
+    --background-color: #f4f7f9;
+    --card-bg-color: #ffffff;
+    --text-color: #333;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--card-bg-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+/* --- Contenedor de la Gráfica --- */
+.chart-container {
+    max-width: 900px; /* Ancho máximo de la gráfica */
+    margin: 0 auto;  /* Centrar el contenedor */
+    padding: 2rem;
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+/* El canvas es responsivo por defecto con Chart.js, 
+   pero el contenedor ayuda a limitar su tamaño en pantallas grandes. */
